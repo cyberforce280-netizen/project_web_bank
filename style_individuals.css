@@ -1,0 +1,165 @@
+/* 
+    Project: YIDB - Individuals Page (خدمات الأفراد)
+    Style: Premium Corporate & Modern Showcase
+*/
+
+/* 1. المتغيرات والأساسيات */
+:root {
+    --primary-gold: #d4af37;
+    --dark-gold: #aa8c2c;
+    --bg-dark: #0a0b10;
+    --bg-card: rgba(255, 255, 255, 0.03);
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+    --transition: all 0.4s ease;
+    --glass-border: rgba(212, 175, 55, 0.15);
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.text-gold { color: var(--primary-gold); }
+.section-padding { padding: 100px 0; }
+
+/* 2. الهيدر (Navigation) - مطابق للهوية الموحدة */
+.main-header {
+    position: fixed; top: 0; width: 100%; z-index: 1000;
+    background: rgba(10, 11, 16, 0.9); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border); padding: 15px 0;
+}
+
+.nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo i { font-size: 2rem; color: var(--primary-gold); }
+.logo-text span { display: block; font-weight: 800; color: #fff; }
+.logo-text small { font-size: 0.7rem; color: var(--primary-gold); }
+
+.nav-menu { display: flex; gap: 30px; list-style: none; }
+.nav-menu a { text-decoration: none; color: #fff; font-weight: 600; font-size: 0.9rem; }
+.nav-menu a.active { color: var(--primary-gold); }
+
+.btn-login {
+    background: var(--primary-gold); color: #000; padding: 8px 20px;
+    border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 0.85rem;
+}
+
+/* 3. قسم هيرو الأفراد (Page Hero) */
+.page-hero {
+    padding: 180px 0 100px;
+    background: radial-gradient(circle at top left, rgba(212,175,55,0.05) 0%, transparent 50%);
+    text-align: center;
+}
+
+.badge {
+    background: rgba(212, 175, 55, 0.1); color: var(--primary-gold);
+    padding: 5px 15px; border-radius: 50px; font-size: 0.8rem;
+    font-weight: 700; border: 1px solid var(--glass-border);
+}
+
+.hero-text-center h1 { font-size: 3.5rem; font-weight: 900; margin: 20px 0; line-height: 1.2; }
+.hero-text-center p { color: var(--text-muted); font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+
+/* 4. كروت الخدمات (Accounts Section) */
+.section-title { margin-bottom: 50px; }
+.section-title span { font-weight: 700; letter-spacing: 2px; }
+.section-title h2 { font-size: 2.5rem; font-weight: 800; margin-top: 10px; }
+
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+.service-card {
+    background: var(--bg-card); padding: 40px; border-radius: 20px;
+    border: 1px solid var(--glass-border); transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-10px); background: rgba(212, 175, 55, 0.05);
+    border-color: var(--primary-gold);
+}
+
+.s-icon { font-size: 2.5rem; color: var(--primary-gold); margin-bottom: 20px; }
+.service-card h3 { font-size: 1.5rem; margin-bottom: 15px; }
+.service-card p { color: var(--text-muted); margin-bottom: 25px; font-size: 0.95rem; }
+
+.btn-link {
+    color: var(--primary-gold); font-weight: 700; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 80px; transition: 0.3s;
+}
+.btn-link:hover { gap: 15px; }
+
+/* 5. قسم البطاقات (Cards Showcase) */
+.bg-dark { background-color: #050505; }
+.cards-display-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 50px; }
+
+.card-item-box { text-align: center; padding: 20px; transition: var(--transition); }
+.card-item-box img { 
+    width: 100%; max-width: 300px; margin-bottom: 25px; 
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.5)); transition: 0.5s;
+}
+.card-item-box:hover img { transform: scale(1.05) rotate(-3deg); }
+.card-item-box h3 { color: #fff; margin-bottom: 10px; }
+.card-item-box p { color: var(--text-muted); font-size: 0.9rem; }
+
+/* 6. قسم التمويل (Financing) */
+.finance-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+
+.finance-card {
+    display: flex; align-items: center; gap: 30px; background: var(--bg-card);
+    padding: 30px; border-radius: 15px; border-right: 4px solid var(--primary-gold);
+    transition: var(--transition);
+}
+
+.finance-card:hover { background: rgba(255,255,255,0.06); transform: scale(1.01); }
+.f-icon { font-size: 2.2rem; color: var(--primary-gold); min-width: 60px; }
+.f-content h3 { font-size: 1.3rem; margin-bottom: 5px; }
+.f-content p { color: var(--text-muted); font-size: 0.95rem; }
+
+/* 7. الفوتر (Footer) */
+.main-footer { background: #000; padding: 80px 0 30px; border-top: 1px solid var(--glass-border); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; padding-bottom: 50px; }
+.footer-brand .logo { font-size: 1.5rem; margin-bottom: 20px; }
+.footer-contact h3 { color: var(--primary-gold); margin-bottom: 20px; }
+.footer-contact p { color: var(--text-muted); margin-bottom: 10px; }
+
+.footer-bottom { text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; font-size: 0.9rem; color: var(--text-muted); }
+
+/* زر الثيم */
+.theme-btn {
+    background: none; border: 1px solid var(--glass-border);
+    color: var(--primary-gold); width: 40px; height: 40px; border-radius: 50%;
+    cursor: pointer; margin-right: 15px; transition: 0.3s;
+}
+.theme-btn:hover { background: var(--primary-gold); color: #000; }
+
+/* 8. التجاوب (Responsive) */
+@media (max-width: 992px) {
+    .cards-display-grid { grid-template-columns: 1fr; }
+    .hero-text-center h1 { font-size: 2.5rem; }
+    .footer-grid { grid-template-columns: 1fr; text-align: center; }
+}
+
+@media (max-width: 768px) {
+    .nav-menu { display: none; } /* يفضل إضافة قائمة همبرغر لاحقاً */
+    .section-padding { padding: 60px 0; }
+}
+
+/* دعم الوضع الفاتح (اختياري) */
+body.light-mode {
+    --bg-dark: #f8f9fa;
+    --text-main: #222;
+    --text-muted: #555;
+    --bg-card: #ffffff;
+    --glass-border: rgba(0,0,0,0.1);
+}
+body.light-mode .main-header { background: rgba(255,255,255,0.9); }
+body.light-mode .logo-text span { color: #000; }
+body.light-mode .nav-menu a { color: #000; }

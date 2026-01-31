@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هندسة الثروة | حسابات البنك اليمني للتنمية والاستثمار</title>
+    
+    <!-- الخطوط والأيقونات العالمية -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- ربط ملف CSS (تأكد من تسمية الملف بهذا الاسم) -->
+    <link rel="stylesheet" href="css/style_accounnts.css">
+</head>
+<body class="futuristic-banking">
+
+    <!-- الهيدر الذكي الموحد (Smart Navbar) -->
+    <header class="main-header" id="header">
+        <nav class="container nav-wrapper">
+            <div class="header-right">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-landmark-dome"></i>
+                    <div class="logo-text">
+                        <span>البنك اليمني</span>
+                        <small>للتنمية والاستثمار</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="header-center">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li class="has-mega">
+                        <a href="individuals.html" class="active">الأفراد <i class="fas fa-chevron-down"></i></a>
+                        <!-- ميجا ميني متطورة -->
+                        <div class="mega-menu">
+                            <div class="mega-grid">
+                                <div class="mega-col">
+                                    <h3><i class="fas fa-wallet"></i> الحسابات</h3>
+                                    <a href="#current">الجاري الرقمي</a>
+                                    <a href="#investment">الادخار الاستثماري</a>
+                                    <a href="#youth">جيل الطموح (الشباب)</a>
+                                </div>
+                                <div class="mega-col">
+                                    <h3><i class="fas fa-credit-card"></i> البطاقات</h3>
+                                    <a href="cards.html">فيزا إنفينيت</a>
+                                    <a href="cards.html">ماستركارد بلاتينيوم</a>
+                                </div>
+                                <div class="mega-col">
+                                    <h3><i class="fas fa-coins"></i> التمويل</h3>
+                                    <a href="financing.html">التمويل الشخصي</a>
+                                    <a href="financing.html">التمويل السكني</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">الشركات</a></li>
+                    <li><a href="#">الخدمات الرقمية</a></li>
+                </ul>
+            </div>
+
+            <div class="header-left">
+                <div class="nav-btns">
+                    <button id="theme-toggle" class="theme-btn" title="تبديل المظهر">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                    <a href="login.html" class="btn-login">
+                        <i class="fas fa-user-lock"></i>
+                        <span>دخول العملاء</span>
+                    </a>
+                    <div class="hamburger" id="hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- قسم الهيرو (The Visionary Hero) -->
+        <section class="accounts-hero-premium">
+            <div class="hero-background-effects">
+                <div class="glow-orb"></div>
+            </div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="reveal-tag">مستقبلك يبدأ من هنا</div>
+                    <h1 class="main-title">ليس مجرد حساب، <br><span class="gradient-text">بل شريك لنمو ثروتك.</span></h1>
+                    <p class="hero-p">حلول مصرفية ذكية مصممة لتمكينك من إدارة مستقبلك المالي بلمسة واحدة. أمان مطلق، سرعة فائقة، وابتكار لا يتوقف.</p>
+                    <div class="hero-stats">
+                        <div class="h-stat"><strong>+150k</strong><span>عميل يثق بنا</span></div>
+                        <div class="h-stat"><strong>100%</strong><span>رقمي بالكامل</span></div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#current" class="btn-primary">اكتشف الحلول</a>
+                        <a href="login.html" class="btn-outline">افتح حسابك الآن</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards-container">
+                        <!-- هنا يمكن وضع صورة تعبيرية لبطاقات أو تطبيق البنك -->
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80" alt="Future Banking" class="main-visual-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم عرض الحسابات (Account Architecture) -->
+        <section class="accounts-showcase section-padding">
+            <div class="container">
+                <div class="section-header-centered">
+                    <h2>باقات مصممة لأهدافك</h2>
+                    <p>اختر المحرك المالي الذي يتناسب مع طموحاتك القادمة</p>
+                </div>
+
+                <div class="accounts-detailed-grid">
+                    <!-- الحساب الجاري -->
+                    <article class="account-premium-box" id="current">
+                        <div class="a-box-inner">
+                            <div class="a-icon"><i class="fas fa-bolt-lightning"></i></div>
+                            <span class="a-tag">رقمي سريع</span>
+                            <h3>الحساب الجاري الذكي</h3>
+                            <p>إدارة يومية لثروتك بمرونة فائقة. تحويلات لحظية، دفع عبر الهاتف، وتحكم كامل في مصاريفك.</p>
+                            <ul class="a-features">
+                                <li><i class="fas fa-check"></i> بطاقة افتراضية فورية</li>
+                                <li><i class="fas fa-check"></i> إعفاء من الرسوم الشهرية</li>
+                                <li><i class="fas fa-check"></i> دعم فني مخصص 24/7</li>
+                            </ul>
+                            <a href="#" class="a-cta">ابدأ الآن <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- حساب الادخار -->
+                    <article class="account-premium-box featured" id="investment">
+                        <div class="a-box-inner">
+                            <div class="a-icon"><i class="fas fa-chart-line"></i></div>
+                            <span class="a-tag">نمو مستدام</span>
+                            <h3>حساب الاستثمار المتنامي</h3>
+                            <p>اجعل أموالك تعمل لأجلك. أرباح سنوية مجزية متوافقة مع الشريعة الإسلامية تضمن لك مستقبلاً آمناً.</p>
+                            <ul class="a-features">
+                                <li><i class="fas fa-check"></i> توزيع أرباح ربع سنوي</li>
+                                <li><i class="fas fa-check"></i> إمكانية السحب المرن</li>
+                                <li><i class="fas fa-check"></i> تقارير استثمارية دورية</li>
+                            </ul>
+                            <a href="#" class="a-cta">استثمر بذكاء <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- حساب الشباب -->
+                    <article class="account-premium-box" id="youth">
+                        <div class="a-box-inner">
+                            <div class="a-icon"><i class="fas fa-user-astronaut"></i></div>
+                            <span class="a-tag">جيل الطموح</span>
+                            <h3>حساب الشباب Y-IDB</h3>
+                            <p>انطلق في رحلتك المالية باستقلالية. خصومات حصرية، عروض تسوق، وبطاقة تعبر عن شخصيتك.</p>
+                            <ul class="a-features">
+                                <li><i class="fas fa-check"></i> برنامج مكافآت خاص</li>
+                                <li><i class="fas fa-check"></i> بدون حد أدنى للرصيد</li>
+                                <li><i class="fas fa-check"></i> دورات تعليم مالي مجانية</li>
+                            </ul>
+                            <a href="#" class="a-cta">انضم للجيل <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- جدول المقارنة المستقبلي (The Matrix) -->
+        <section class="comparison-matrix section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>نظرة فاحصة على المميزات</h2>
+                </div>
+                <div class="matrix-wrapper">
+                    <table class="banking-table">
+                        <thead>
+                            <tr>
+                                <th>الخدمة / الميزة</th>
+                                <th>الجاري الذكي</th>
+                                <th>الاستثمار المتنامي</th>
+                                <th>حساب الشباب</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-name">الحد الأدنى للفتح</td>
+                                <td>0 ريال</td>
+                                <td>50,000 ريال</td>
+                                <td>0 ريال</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">الأرباح المتوقعة</td>
+                                <td>-</td>
+                                <td>تصل إلى 12% سنوياً</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">البطاقة المرفقة</td>
+                                <td>فيزا بلاتينيوم</td>
+                                <td>ماستركارد كلاسيك</td>
+                                <td>بطاقة الشباب الملونة</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">الوصول عبر التطبيق</td>
+                                <td><i class="fas fa-circle-check"></i> كامل</td>
+                                <td><i class="fas fa-circle-check"></i> كامل</td>
+                                <td><i class="fas fa-circle-check"></i> كامل</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر الفاخر (Premium Footer) -->
+    <footer class="main-footer-premium">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-landmark-dome"></i>
+                        <span>البنك اليمني</span>
+                    </div>
+                    <p>نحن لا نصنع خدمات مصرفية فحسب، نحن نبني اقتصاداً رقمياً يمنياً يقود المنطقة نحو المستقبل.</p>
+                    <div class="social-pills">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="#">فتح حساب</a></li>
+                        <li><a href="#">طلب تمويل</a></li>
+                        <li><a href="#">طلب بطاقة</a></li>
+                        <li><a href="#">التداول الرقمي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>عن البنك</h4>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">الوظائف</a></li>
+                        <li><a href="#">خريطة الفروع</a></li>
+                        <li><a href="#">الاستدامة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>تواصل مباشر</h4>
+                    <p><i class="fas fa-phone"></i> 800-000-111</p>
+                    <p><i class="fas fa-envelope"></i> info@yidb.ye</p>
+                    <div class="security-seal">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>نظام آمن بمعايير PCI-DSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p>&copy; 2024 البنك اليمني للتنمية والاستثمار. الريادة في التغيير.</p>
+                <div class="legal-links">
+                    <a href="#">الشروط والأحكام</a>
+                    <a href="#">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ربط ملف JavaScript الموحد -->
+    <script src="js/main.js"></script>
+</body>
+</html>

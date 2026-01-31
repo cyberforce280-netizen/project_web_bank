@@ -1,0 +1,135 @@
+/* 
+    Project: YIDB - Premium Secure Login
+    Author: Professional Design Team
+*/
+
+:root {
+    --gold: #d4af37;
+    --gold-dark: #aa8c2c;
+    --gold-light: #f1d279;
+    --bg-dark: #0a0b10;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(212, 175, 55, 0.2);
+    --text-white: #ffffff;
+    --text-muted: #a0a0a0;
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* دعم الوضع الفاتح */
+body.light-mode {
+    --bg-dark: #f0f2f5;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --text-white: #1a1a1a;
+    --text-muted: #555555;
+    --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+
+body.login-page {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    transition: background 0.5s ease;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* تأثيرات الخلفية */
+.bg-visual-effects {
+    position: fixed; inset: 0; z-index: -1; overflow: hidden;
+}
+.glow-circle {
+    position: absolute; width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+    filter: blur(60px); animation: pulse 10s infinite alternate;
+}
+.top-right { top: -200px; left: -100px; }
+.bottom-left { bottom: -200px; right: -100px; background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%); }
+
+@keyframes pulse { 0% { transform: scale(1); } 100% { transform: scale(1.3); } }
+
+/* الهيدر المصغر */
+.minimal-header {
+    padding: 20px 0; z-index: 100;
+}
+.nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+.logo i { font-size: 2.2rem; color: var(--gold); }
+.logo-text span { display: block; font-weight: 800; font-size: 1.2rem; line-height: 1; }
+.logo-text small { color: var(--gold); font-size: 0.75rem; letter-spacing: 1px; }
+
+.nav-controls { display: flex; gap: 12px; }
+.control-btn {
+    width: 45px; height: 45px; border-radius: 50%; border: 1px solid var(--glass-border);
+    background: var(--card-bg); color: var(--gold); display: flex; align-items: center;
+    justify-content: center; cursor: pointer; text-decoration: none; transition: var(--transition);
+}
+.control-btn:hover { background: var(--gold); color: #000; transform: translateY(-3px); }
+
+/* حاوية الكرت */
+.auth-container {
+    flex: 1; display: flex; align-items: center; justify-content: center; padding: 40px 20px;
+}
+.login-card-wrapper {
+    width: 100%; max-width: 480px; position: relative;
+}
+.login-card {
+    background: var(--card-bg); backdrop-filter: blur(25px);
+    border: 1px solid var(--glass-border); border-radius: 40px;
+    padding: 50px 40px; box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+}
+
+.card-header { text-align: center; margin-bottom: 40px; }
+.security-shield {
+    font-size: 3.5rem; color: var(--gold); margin-bottom: 15px;
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
+}
+.card-header h1 { font-size: 2.2rem; font-weight: 900; margin-bottom: 10px; }
+.card-header p { color: var(--text-muted); font-size: 0.95rem; }
+
+/* النموذج */
+.input-group { margin-bottom: 25px; }
+.input-group label { display: block; margin-bottom: 10px; font-weight: 600; font-size: 0.9rem; color: var(--gold); }
+.input-wrapper { position: relative; }
+.input-wrapper i { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.2rem; }
+.input-wrapper input {
+    width: 100%; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border);
+    padding: 16px 55px 16px 20px; border-radius: 15px; color: var(--text-white);
+    outline: none; transition: var(--transition); font-size: 1rem;
+}
+.input-wrapper input:focus { border-color: var(--gold); background: rgba(212, 175, 55, 0.05); box-shadow: 0 0 20px rgba(212, 175, 55, 0.15); }
+
+.form-helper { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; margin-bottom: 35px; }
+.remember-me { cursor: pointer; display: flex; align-items: center; gap: 8px; color: var(--text-muted); }
+.forgot-link { color: var(--gold); text-decoration: none; font-weight: 700; }
+.forgot-link:hover { text-decoration: underline; }
+
+.btn-primary-gold {
+    width: 100%; padding: 18px; background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    border: none; border-radius: 15px; color: #000; font-weight: 900; font-size: 1.1rem;
+    cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 12px;
+    transition: var(--transition);
+}
+.btn-primary-gold:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4); }
+
+/* الفوتر */
+.card-footer { text-align: center; margin-top: 40px; border-top: 1px solid var(--glass-border); padding-top: 30px; }
+.card-footer p { margin-bottom: 20px; font-size: 0.95rem; }
+.card-footer a { color: var(--gold); text-decoration: none; font-weight: 700; }
+.security-standards { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--text-muted); font-size: 0.8rem; opacity: 0.7; }
+
+.minimal-footer { padding: 30px; text-align: center; color: var(--text-muted); font-size: 0.85rem; }
+
+/* أنيميشن */
+.fade-in { animation: fadeInUp 1s ease forwards; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 480px) {
+    .login-card { padding: 40px 25px; border-radius: 30px; }
+    .card-header h1 { font-size: 1.8rem; }
+    .logo-text { display: none; }
+}

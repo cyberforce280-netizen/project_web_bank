@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البوابة الآمنة | البنك اليمني للتنمية والاستثمار</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_login.css">
+</head>
+<body class="login-page">
+
+    <!-- خلفية ديناميكية خلف الكرت -->
+    <div class="bg-visual-effects">
+        <div class="glow-circle top-right"></div>
+        <div class="glow-circle bottom-left"></div>
+    </div>
+
+    <header class="minimal-header">
+        <nav class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <i class="fas fa-landmark"></i>
+                <div class="logo-text">
+                    <span>البنك اليمني</span>
+                    <small>للتنمية والاستثمار</small>
+                </div>
+            </a>
+            <div class="nav-controls">
+                <a href="index.html" class="control-btn" title="الرئيسية"><i class="fas fa-house"></i></a>
+                <button id="theme-toggle" class="control-btn" title="تغيير المظهر"><i class="fas fa-moon" id="theme-icon"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <div class="login-card-wrapper fade-in">
+            <div class="login-card">
+                <div class="card-header">
+                    <div class="security-shield">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h1>تسجيل الدخول الآمن</h1>
+                    <p>أدخل بياناتك للوصول إلى الخدمات المصرفية الرقمية</p>
+                </div>
+
+                <form class="auth-form" action="#">
+                    <div class="input-group">
+                        <label for="username">اسم المستخدم / رقم الحساب</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user-circle"></i>
+                            <input type="text" id="username" placeholder="مثال: 1002345" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">كلمة المرور</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" placeholder="••••••••" required>
+                        </div>
+                    </div>
+
+                    <div class="form-helper">
+                        <label class="remember-me">
+                            <input type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            تذكرني على هذا الجهاز
+                        </label>
+                        <a href="#" class="forgot-link">هل نسيت كلمة المرور؟</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary-gold">
+                        <span>دخول آمن</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </form>
+
+                <div class="card-footer">
+                    <p>ليس لديك حساب؟ <a href="#">افتح حسابك الآن</a></p>
+                    <div class="security-standards">
+                        <i class="fas fa-user-shield"></i>
+                        <span>محمي بمعايير تشفير عالمية PCI-DSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="minimal-footer">
+        <p>© 2024 البنك اليمني للتنمية والاستثمار. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

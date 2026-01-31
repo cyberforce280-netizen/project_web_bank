@@ -1,0 +1,114 @@
+/* 
+    Project: Yemen Bank - About Us Page
+    Style: Prestigious & Legacy Inspired
+    File: style_about.css
+*/
+
+:root {
+    --primary-gold: #c5a059;
+    --gold-gradient: linear-gradient(135deg, #f9f295 0%, #c5a059 50%, #8e6d2f 100%);
+    --bg-deep: #050505;
+    --bg-surface: #111111;
+    --text-main: #ffffff;
+    --text-dim: #a0a0a0;
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.light-theme {
+    --bg-deep: #f8fafc;
+    --bg-surface: #ffffff;
+    --text-main: #0f172a;
+    --text-dim: #64748b;
+    --glass: rgba(0, 0, 0, 0.02);
+    --glass-border: rgba(0, 0, 0, 0.08);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--bg-deep);
+    color: var(--text-main);
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
+
+/* Header & Logo */
+.main-header {
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000;
+}
+.light-theme .main-header { background: rgba(255, 255, 255, 0.9); }
+.nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+.logo i { font-size: 2rem; color: var(--primary-gold); }
+.logo-text span { display: block; font-weight: 800; font-size: 1.2rem; }
+.logo-text small { color: var(--primary-gold); font-size: 0.7rem; }
+
+.nav-menu { display: flex; list-style: none; gap: 25px; }
+.nav-menu a { text-decoration: none; color: inherit; font-weight: 600; opacity: 0.8; transition: 0.3s; }
+.nav-menu a.active { color: var(--primary-gold); opacity: 1; }
+
+.btn-gold-sm { background: var(--gold-gradient); color: #000; padding: 10px 25px; border-radius: 8px; text-decoration: none; font-weight: 800; }
+
+/* Hero Section */
+.mega-hero {
+    height: 80vh; position: relative; display: flex; align-items: center; overflow: hidden;
+}
+.hero-bg { position: absolute; width: 100%; height: 100%; z-index: -1; }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.3); }
+
+h1 { font-size: 4rem; font-weight: 900; line-height: 1.2; margin: 20px 0; }
+.gold-gradient { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.prestige-label { color: var(--primary-gold); border-right: 3px solid var(--primary-gold); padding-right: 15px; font-weight: 700; }
+
+/* Story Section */
+.story-section { padding: 100px 0; }
+.prestige-card {
+    display: flex; background: var(--bg-surface); border-radius: 40px; overflow: hidden;
+    border: 1px solid var(--glass-border);
+}
+.pc-image { flex: 1; }
+.pc-image img { width: 100%; height: 100%; object-fit: cover; }
+.pc-content { flex: 1.2; padding: 60px; }
+.industry-tag { color: var(--primary-gold); font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 15px; }
+.history-stats { display: flex; gap: 40px; margin-top: 30px; }
+.h-stat strong { display: block; font-size: 2rem; color: var(--primary-gold); }
+
+/* Values Grid */
+.values-section { padding: 100px 0; background: var(--glass); }
+.section-title { font-size: 2.5rem; font-weight: 900; margin-bottom: 40px; }
+.sol-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.sol-item {
+    background: var(--bg-surface); padding: 50px 30px; border-radius: 30px; text-align: center;
+    border: 1px solid var(--glass-border); transition: 0.3s;
+}
+.sol-item:hover { transform: translateY(-10px); border-color: var(--primary-gold); }
+.sol-item i { font-size: 3rem; color: var(--primary-gold); margin-bottom: 20px; }
+
+/* Timeline Section */
+.timeline-section { padding: 100px 0; }
+.timeline-wrapper { position: relative; max-width: 800px; margin: 50px auto; border-right: 2px solid var(--primary-gold); padding-right: 30px; }
+.timeline-item { position: relative; margin-bottom: 50px; }
+.timeline-item::before {
+    content: ''; position: absolute; right: -41px; top: 10px;
+    width: 20px; height: 20px; background: var(--primary-gold); border-radius: 50%;
+}
+.time-year { font-size: 1.5rem; font-weight: 900; color: var(--primary-gold); margin-bottom: 10px; }
+.time-content h4 { font-size: 1.3rem; margin-bottom: 10px; }
+
+.main-footer { padding: 50px 0; border-top: 1px solid var(--glass-border); color: var(--text-dim); }
+
+/* Responsive */
+@media (max-width: 992px) {
+    h1 { font-size: 2.5rem; }
+    .prestige-card { flex-direction: column; }
+    .pc-content { padding: 30px; }
+    .nav-menu { display: none; }
+}

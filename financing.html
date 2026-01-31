@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حلول التمويل المتكاملة | البنك اليمني للتنمية والاستثمار</title>
+    
+    <!-- الخطوط والأيقونات -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ربط ملف CSS المخصص للتمويل -->
+    <link rel="stylesheet" href="css/style_financing.css">
+</head>
+<body>
+
+    <!-- الهيدر الذكي الفاخر -->
+    <header class="main-header" id="header">
+        <nav class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <i class="fas fa-landmark"></i>
+                <div class="logo-text">
+                    <span>البنك اليمني</span>
+                    <small>للتنمية والاستثمار</small>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="has-mega">
+                    <a href="individuals.html" class="active">الأفراد <i class="fas fa-chevron-down"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-grid">
+                            <div class="mega-col">
+                                <h3>الحسابات</h3>
+                                <a href="accounts.html">الحساب الجاري الرقمي</a>
+                                <a href="accounts.html">حساب الادخار الاستثمارية</a>
+                            </div>
+                            <div class="mega-col">
+                                <h3>البطاقات</h3>
+                                <a href="cards.html">فيزا إنفينيت</a>
+                                <a href="cards.html">ماستركارد بلاتينيوم</a>
+                            </div>
+                            <div class="mega-col">
+                                <h3>التمويل</h3>
+                                <a href="financing.html">التمويل الشخصي</a>
+                                <a href="financing.html">التمويل السكني</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">الشركات</a></li>
+                <li><a href="#">الخدمات الرقمية</a></li>
+                <li><a href="#">عن البنك</a></li>
+            </ul>
+
+            <div class="nav-btns">
+                <a href="login.html" class="btn-gold-sm">دخول العملاء</a>
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- قسم الهيرو (Hero Section) -->
+        <section class="finance-hero-modern">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content-wrapper">
+                <div class="hero-text fade-in">
+                    <span class="trust-badge"><i class="fas fa-hand-holding-heart"></i> تمويل متوافق مع الشريعة الإسلامية</span>
+                    <h1>حلول تمويلية <br><span class="gold-text">تبني مستقبلك</span></h1>
+                    <p>نحن لا نقدم مجرد قروض، نحن نقدم فرصاً لتحويل طموحاتك إلى واقع ملموس بشروط ميسرة وسرعة فائقة.</p>
+                    <div class="quick-benefits">
+                        <div class="q-item"><i class="fas fa-bolt"></i><span>موافقة فورية</span></div>
+                        <div class="q-item"><i class="fas fa-calendar-alt"></i><span>أقساط مرنة</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- أنواع التمويل -->
+        <section class="finance-detailed-options">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>اختر برنامج التمويل المناسب لك</h2>
+                    <p>باقات متنوعة صممت خصيصاً لتلبي احتياجاتك الشخصية والعائلية</p>
+                </div>
+
+                <div class="finance-modern-grid">
+                    <!-- التمويل الشخصي -->
+                    <div class="finance-card-premium fade-up">
+                        <div class="f-card-image">
+                            <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=800&q=80" alt="Personal Finance">
+                        </div>
+                        <div class="f-card-content">
+                            <div class="f-icon"><i class="fas fa-user-tie"></i></div>
+                            <h3>التمويل الشخصي</h3>
+                            <p>سواء للسفر، التعليم، أو تغطية مصاريف طارئة، تمويلنا الشخصي هو الخيار الأسرع.</p>
+                            <ul class="f-features">
+                                <li><i class="fas fa-check"></i> مبالغ تصل لـ 10 مليون ريال</li>
+                                <li><i class="fas fa-check"></i> فترة سماح تصل لـ 3 أشهر</li>
+                            </ul>
+                            <button class="btn-apply">قدم طلبك الآن</button>
+                        </div>
+                    </div>
+
+                    <!-- التمويل السكني -->
+                    <div class="finance-card-premium fade-up">
+                        <div class="f-card-image">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Home Finance">
+                        </div>
+                        <div class="f-card-content">
+                            <div class="f-icon"><i class="fas fa-home"></i></div>
+                            <h3>التمويل السكني</h3>
+                            <p>امتلك بيت أحلامك اليوم. حلول عقارية مرنة تساعدك على الاستقرار مع عائلتك.</p>
+                            <ul class="f-features">
+                                <li><i class="fas fa-check"></i> تمويل يصل لـ 80% من قيمة المنزل</li>
+                                <li><i class="fas fa-check"></i> مدة سداد تصل لـ 15 سنة</li>
+                            </ul>
+                            <button class="btn-apply">ابدأ رحلة التملك</button>
+                        </div>
+                    </div>
+
+                    <!-- تمويل السيارات -->
+                    <div class="finance-card-premium fade-up">
+                        <div class="f-card-image">
+                            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80" alt="Car Finance">
+                        </div>
+                        <div class="f-card-content">
+                            <div class="f-icon"><i class="fas fa-car"></i></div>
+                            <h3>تمويل السيارات</h3>
+                            <p>انطلق بسيارتك الجديدة. برامج تمويل وتأجير منتهي بالتمليك تناسب دخلك الشهري.</p>
+                            <ul class="f-features">
+                                <li><i class="fas fa-check"></i> بدون دفعة أولى (للموظفين)</li>
+                                <li><i class="fas fa-check"></i> تأمين شامل طوال فترة التمويل</li>
+                            </ul>
+                            <button class="btn-apply">اختر سيارتك</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- خطوات العمل -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>3 خطوات بسيطة للحصول على التمويل</h2>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-box">
+                        <div class="step-num">01</div>
+                        <h4>قدم طلبك</h4>
+                        <p>عبر التطبيق أو الموقع الإلكتروني في دقائق.</p>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-num">02</div>
+                        <h4>احصل على الموافقة</h4>
+                        <p>يقوم فريقنا بمراجعة طلبك والرد خلال 24 ساعة.</p>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-num">03</div>
+                        <h4>استلم مبالغك</h4>
+                        <p>يتم تحويل مبلغ التمويل مباشرة إلى حسابك البنكي.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر الاحترافي -->
+    <footer class="main-footer-premium">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col info">
+                    <div class="footer-logo"><i class="fas fa-landmark"></i> <span>البنك اليمني</span></div>
+                    <p>نحن نبني مستقبلاً مالياً آمناً ومزدهراً في اليمن من خلال حلول مصرفية مبتكرة تتوافق مع معايير الجودة العالمية.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#">عن البنك</a></li>
+                        <li><a href="#">الوظائف</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact">
+                    <h4>تواصل معنا</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone-alt"></i> 800-000-111</li>
+                        <li><i class="fas fa-envelope"></i> info@yidb.ye</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 البنك اليمني للتنمية والاستثمار. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            themeIcon.classList.toggle('fa-sun');
+        });
+    </script>
+</body>
+</html>

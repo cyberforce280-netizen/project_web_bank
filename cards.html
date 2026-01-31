@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البطاقات الفاخرة | البنك اليمني للتنمية والاستثمار</title>
+    
+    <!-- الخطوط والأيقونات -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- مكتبة الأنميشن AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_card.css">
+</head>
+<body class="dark-theme"> <!-- الكلاس الافتراضي -->
+
+    <!-- الهيدر المطور -->
+    <header class="main-header" id="mainHeader">
+        <nav class="container nav-wrapper">
+            <!-- اللوجو -->
+            <a href="index.html" class="logo">
+                <i class="fas fa-landmark gold-text"></i>
+                <div class="logo-text">
+                    <span>البنك اليمني</span>
+                    <small>للتنمية والاستثمار</small>
+                </div>
+            </a>
+
+            <!-- القائمة -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="#" class="active">البطاقات</a></li>
+                <li><a href="#">التمويل</a></li>
+                <li><a href="#">عن البنك</a></li>
+            </ul>
+
+            <!-- أدوات الهيدر -->
+            <div class="nav-btns">
+                <!-- زر العودة للرئيسية -->
+                <a href="index.html" class="back-home-btn" title="العودة للرئيسية">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <!-- زر تبديل الثيم -->
+                <button id="theme-toggle" class="theme-switch" title="تبديل الوضع">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+
+                <a href="#" class="btn-gold-sm">دخول</a>
+
+                <!-- زر الموبايل -->
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- قسم الهيرو -->
+        <section class="hero-section">
+            <div class="hero-glow"></div>
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <span class="badge">نخبة الخدمات المصرفية</span>
+                    <h1>عالم من <span class="gold-gradient">الفخامة</span> في بطاقة</h1>
+                    <p>استمتع بتجربة مصرفية فريدة تجمع بين الهوية اليمنية الأصيلة والمعايير العالمية.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم عرض جميع البطاقات الإلكترونية -->
+        <section class="cards-grid-section" id="explore">
+            <div class="container">
+
+                <!-- 1. بطاقة فيزا إنفينيت (الفاخرة) -->
+                <div class="luxury-card-item" data-aos="fade-left">
+                    <div class="card-visual">
+                        <img src="https://i.ibb.co/mXzR13R/infinite-black.png" alt="Visa Infinite" class="floating-card">
+                        <div class="card-shadow-effect"></div>
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">الفئة الملكية</span>
+                        <h2>فيزا إنفينيت <span class="gold-text">الأسود الملكي</span></h2>
+                        <p>بوابتك لعالم بلا حدود. صُممت للنخبة لتمنحك دخولاً لأكثر من 1000 صالة مطار وخدمات كونسيرج عالمية على مدار الساعة.</p>
+                        <div class="card-features-mini">
+                            <span><i class="fas fa-crown"></i> خدمات VIP</span>
+                            <span><i class="fas fa-plane"></i> سفر غير محدود</span>
+                        </div>
+                        <button class="btn-gold">طلب البطاقة الملكية</button>
+                    </div>
+                </div>
+
+                <!-- 2. ماستركارد بلاتينيوم (التميز) -->
+                <div class="luxury-card-item reverse" data-aos="fade-right">
+                    <div class="card-visual">
+                        <img src="https://i.ibb.co/YyY3C2f/platinum-silver.png" alt="Mastercard Platinum" class="floating-card">
+                        <div class="card-shadow-effect"></div>
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">فئة التميز</span>
+                        <h2>ماستركارد <span class="gold-text">بلاتينيوم</span></h2>
+                        <p>التوازن المثالي بين الرفاهية والاحتياجات اليومية. استمتع بعروض حصرية على الفنادق والمطاعم الفاخرة حول العالم.</p>
+                        <div class="card-features-mini">
+                            <span><i class="fas fa-percent"></i> خصومات حصرية</span>
+                            <span><i class="fas fa-shield-alt"></i> حماية المشتريات</span>
+                        </div>
+                        <button class="btn-gold">اكتشف الامتيازات</button>
+                    </div>
+                </div>
+
+                <!-- 3. البطاقة الافتراضية (الرقمية فورية الإصدار) -->
+                <div class="luxury-card-item" data-aos="fade-left">
+                    <div class="card-visual">
+                        <img src="https://i.ibb.co/K2Nf6Pz/virtual-blue.png" alt="Virtual Card" class="floating-card">
+                        <div class="card-shadow-effect-blue"></div>
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">الابتكار الرقمي</span>
+                        <h2>البطاقة <span class="blue-text">الافتراضية Digital</span></h2>
+                        <p>أمانك في عالم الإنترنت. أصدر بطاقتك فوراً عبر التطبيق وتسوق بأمان مع إمكانية تحديد سقف الإنفاق لحظياً.</p>
+                        <div class="card-features-mini">
+                            <span><i class="fas fa-bolt"></i> إصدار فوري</span>
+                            <span><i class="fas fa-mobile-alt"></i> تحكم كامل</span>
+                        </div>
+                        <button class="btn-gold">أصدرها الآن</button>
+                    </div>
+                </div>
+
+                <!-- 4. بطاقة الشركات (للأعمال) -->
+                <div class="luxury-card-item reverse" data-aos="fade-right">
+                    <div class="card-visual">
+                        <img src="https://i.ibb.co/vYV0Y4X/business-dark.png" alt="Business Card" class="floating-card">
+                        <div class="card-shadow-effect"></div>
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">قطاع الأعمال</span>
+                        <h2>بطاقة <span class="gold-text">الشركات Corporate</span></h2>
+                        <p>الحل الأمثل لإدارة مصاريف شركتك. تمنحك تقارير تفصيلية وتحكماً كاملاً في نفقات الموظفين والعمليات التجارية.</p>
+                        <div class="card-features-mini">
+                            <span><i class="fas fa-chart-line"></i> إدارة النفقات</span>
+                            <span><i class="fas fa-briefcase"></i> تسهيلات ائتمانية</span>
+                        </div>
+                        <button class="btn-gold">طلب لشركتك</button>
+                    </div>
+                </div>
+
+                <!-- 5. بطاقة الدفع المسبق (الشباب والطلاب) -->
+                <div class="luxury-card-item" data-aos="fade-left">
+                    <div class="card-visual">
+                        <img src="https://i.ibb.co/hZpM0Ym/prepaid-gold.png" alt="Prepaid Card" class="floating-card">
+                        <div class="card-shadow-effect"></div>
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">المرونة المالية</span>
+                        <h2>بطاقة <span class="gold-text">الدفع المسبق</span></h2>
+                        <p>تحكم بميزانيتك بكل سهولة. لا حاجة لحساب بنكي، اشحن البطاقة واستخدمها في التسوق أو السحب النقدي.</p>
+                        <div class="card-features-mini">
+                            <span><i class="fas fa-wallet"></i> بدون حساب بنكي</span>
+                            <span><i class="fas fa-gift"></i> عروض شبابية</span>
+                        </div>
+                        <button class="btn-gold">احصل عليها اليوم</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 البنك اليمني للتنمية والاستثمار. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- سكربتات التفاعل -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // 1. تشغيل الأنميشن
+        AOS.init({ duration: 1000, once: true });
+
+        // 2. نظام التبديل بين Dark و Light Mode
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // التحقق من الثيم المحفوظ في المتصفح
+        if (localStorage.getItem('theme') === 'light') {
+            enableLightMode();
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('light-theme')) {
+                enableDarkMode();
+            } else {
+                enableLightMode();
+            }
+        });
+
+        function enableLightMode() {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('theme', 'light');
+        }
+
+        function enableDarkMode() {
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('theme', 'dark');
+        }
+
+        // 3. منيو الموبايل
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.onclick = () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        };
+    </script>
+</body>
+</html>
